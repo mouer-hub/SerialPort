@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"serialport\startup_stm32f103xb.o"
+"serialport\main.o"
+"serialport\gpio.o"
+"serialport\usart.o"
+"serialport\stm32f1xx_it.o"
+"serialport\stm32f1xx_hal_msp.o"
+"serialport\stm32f1xx_hal_gpio_ex.o"
+"serialport\stm32f1xx_hal_tim.o"
+"serialport\stm32f1xx_hal_tim_ex.o"
+"serialport\stm32f1xx_hal_uart.o"
+"serialport\stm32f1xx_hal.o"
+"serialport\stm32f1xx_hal_rcc.o"
+"serialport\stm32f1xx_hal_rcc_ex.o"
+"serialport\stm32f1xx_hal_gpio.o"
+"serialport\stm32f1xx_hal_dma.o"
+"serialport\stm32f1xx_hal_cortex.o"
+"serialport\stm32f1xx_hal_pwr.o"
+"serialport\stm32f1xx_hal_flash.o"
+"serialport\stm32f1xx_hal_flash_ex.o"
+"serialport\stm32f1xx_hal_exti.o"
+"serialport\system_stm32f1xx.o"
+--strict --scatter "Serialport\Serialport.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Serialport.map" -o Serialport\Serialport.axf
